@@ -1,10 +1,9 @@
 'use client'; // Add this line at the very top
 
-import { useState, type FC, type ReactNode } from 'react';
+import { useState } from 'react';
 // ... rest of your imports (REMOVE Head from 'next/head')
 // import Head from 'next/head'; // REMOVE OR COMMENT OUT THIS LINE
-import { Menu, X, Leaf, Star, ChevronDown, Phone, MessageCircle } from 'lucide-react';
-
+import Image from 'next/image';
 // ... rest of your code
 // import React, { useState } from "react"; // Removed duplicate import
 
@@ -75,12 +74,7 @@ const navLinks = [
   { name: "যোগাযোগ", to: "#contact" },
 ];
 
-const accent = "text-green-800";
-const accentBg = "bg-green-100";
-const gold = "text-yellow-700";
-const goldBg = "bg-yellow-100";
-const earth = "text-amber-900";
-const earthBg = "bg-amber-100";
+
 
 export default function Home() {
   const [logo, setLogo] = useState<string | null>(null);
@@ -165,7 +159,7 @@ export default function Home() {
           Ibtihaj Tea was born from a passion for quality and a deep connection to Bangladesh's tea heartland, Sylhet. Our mission is to bring you the freshest, most authentic teas, celebrating the rich heritage and vibrant culture of our land.
         </p>
         <p className="text-md text-gray-700 mb-2">
-          We believe in the magic of the "first flush" – the season's very first, most delicate leaves, handpicked for their exquisite aroma and flavor. Every cup is a tribute to our roots and a promise of uncompromising quality.
+          We believe in the magic of the &apos;first flush&apos; – the season's very first, most delicate leaves, handpicked for their exquisite aroma and flavor. Every cup is a tribute to our roots and a promise of uncompromising quality.
         </p>
         <div className="flex gap-4 mt-6">
           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex items-center justify-center text-xs text-gray-500">Story Image</div>
